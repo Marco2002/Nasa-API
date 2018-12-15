@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NASA Projekt</title>
+
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="stylesheets/style.css" type="text/css">
+
+    </head>
+    <body>
+		<div id="head">
+			<img src="res/images/nasa-logo.png" height="120px">
+			<h1>Mars Rover</h1>
+		</div>
+		<div id="main">
+			<div id="nav">
+				<ul>
+                    <li> <img src="res/images/rocket-ship.svg" alt="rocket-ship icon" height="24px"><a href="index.html">APOD</a>
+                    </li>
+                    <li class="active"><img src="res/images/mars.svg" alt="mars icon" height="24px"><a href="#!">MARS ROVER</a>
+                    </li>
+                    <li><img src="res/images/meteorite.svg" alt="meteorite icon" height="24px"><a href="neo.html">NEO</a>
+                    </li>
+                </ul>
+			</div>
+			
+			<div id="content">
+                <div class="container">
+                        <div class="card" id="mars-rover">
+                            <div class="container">
+                                <div>
+                                    <label for="camera">select a camera: </label>
+                    				<select id="camera">
+                    					<option class="dropdown" value="FHAZ">Front Hazard Avoidance Camera</option>
+                    					<option class="dropdown" value="RHAZ">Rear Hazard Avoidance Camera</option>
+                    					<option class="dropdown" value="MAST">Mast Camera</option>
+                    					<option class="dropdown" value="CHEMCAM">Chemistry and Camera Complex</option>
+                    					<option class="dropdown" value="MAHLI">Mars Hand Lens Imager</option>
+                    					<option class="dropdown" value="MARDI">Mars Descent Imager</option>
+                    					<option class="dropdown" value="NAVCAM">Navigation Camera</option>
+                    				</select>
+                                </div>
+                                <div>
+                                <label for="sol">select a sol: </label>
+                				<input type="number" id="sol" min="0" value="60">
+                                </div>
+                				<button id="submit">submit</button>
+                            </div>
+                        </div>
+                </div>
+				<div class="container">
+				    <img src="#!" id="rover-image" width="1024px" alt="rover image">
+				</div>
+				
+				<div id="footer">
+                    <table >
+						<tr><td></td><td> <a href="impressum.html" target="_blank"> Impressum </a> </td><td> <a href="sources.html" target="_blank"> Quellen </a> </td><td> <a href="datenschutz.html" target="_blank"> Datenschutz </a> </td><td></td></tr>
+						<tr><td></td><td> <a href="https://www.nasa.gov/" target="_blank"> NASA </a> </td><td> <a href="content.html" target="_blank"> Kontakt </a> </td><td> <a href="https://www.youtube.com/user/NASAtelevision" target="_blank"> NASA Youtube </a> </td><td></td></tr>
+					
+						<tr class="cr"><td class="cr"> Creator: </td><td class="cr"> <a href="https://www.instagram.com/marco_r_dp/" target="_blank"> Marco </a> </td><td class="cr"> <a href="https://www.instagram.com/rubenistkuhl/" target="_blank"> Ruben </a> </td><td class="cr"> <a href="https://www.instagram.com/morliv.1405/" target="_blank"> Moritz </a> </td><td class="cr"> <a href="https://www.instagram.com/dragondann5/" target="_blank"> Daniel </a> </td></tr>
+					</table>
+				
+                </div>
+
+			</div>
+    
+        <script
+          src="https://code.jquery.com/jquery-3.3.1.min.js"
+          integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+          crossorigin="anonymous"></script>
+        <script src="scripts/marsRover.js"></script>
+    </body>
+</html>

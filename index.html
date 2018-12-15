@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>NASA Projekt</title>
+
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="stylesheets/style.css" type="text/css">
+
+    </head>
+
+    <body>
+        <div id="head">
+            <img src="res/images/nasa-logo.png" height="120px">
+            <h1>Astronomy Picture of the Day</h1>
+        </div>
+        <div id="main">
+            <div id="nav">
+                <ul>
+                    <li class="active"><img src="res/images/rocket-ship.svg" alt="rocket-ship icon" height="24px"><a href="#!">APOD</a>
+                    </li>
+                    <li><img src="res/images/mars.svg" alt="mars icon" height="24px"><a href="marsRover.html">MARS ROVER</a>
+                    </li>
+                    <li><img src="res/images/meteorite.svg" alt="meteorite icon" height="24px"><a href="neo.html">NEO</a>
+                    </li>
+                </ul>
+                <div id="date-picker">
+                    <input type="date" id="date"/>
+                    <button id="sub-date">submit</button>
+                </div>
+
+            </div>
+            <div id="content">
+                <div class="container card" id="apod">
+                    <h1 id="title"></h1>
+                    <iframe id="video" type="text/html" width="1088px" height="655px" frameborder="0"></iframe>
+                    <p id="explanation"></p>
+                </div>
+
+                <div id="footer">
+                    <table>
+                        <tr><td></td><td> <a href="impressum.html" target="_blank"> Impressum </a> </td><td> <a href="sources.html" target="_blank"> Quellen </a> </td><td> <a href="datenschutz.html" target="_blank"> Datenschutz </a> </td><td></td></tr>
+                        <tr><td></td><td> <a href="https://www.nasa.gov/" target="_blank"> NASA </a> </td><td> <a href="content.html" target="_blank"> Kontakt </a> </td><td> <a href="https://www.youtube.com/user/NASAtelevision" target="_blank"> NASA Youtube </a> </td><td></td></tr>
+                    
+                        <tr class="cr"><td class="cr"> Creator: </td><td class="cr"> <a href="https://www.instagram.com/marco_r_dp/" target="_blank"> Marco </a> </td><td class="cr"> <a href="https://www.instagram.com/rubenistkuhl/" target="_blank"> Ruben </a> </td><td class="cr"> <a href="https://www.instagram.com/morliv.1405/" target="_blank"> Moritz </a> </td><td class="cr"> <a href="https://www.instagram.com/dragondann5/" target="_blank"> Daniel </a> </td></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="scripts/index.js"></script>
+    </body>
+
+</html>
